@@ -28,10 +28,10 @@ with several options.
 This class has in PEAR status: %{_status}.
 
 %description -l pl
-XML_Beautifier doda wciêcia i znaki koñca linii do Twoich plików XML,
-zast±pi wszelkie encje, przeformatuje komentarze i sprawi, ¿e Twój
-dokument bêdzie ³atwiejszy do czytania. Za pomoc± wielu opcji mo¿esz
-wp³yn±æ na sposób, w jaki Twój dokument bêdzie upiêkszony.
+XML_Beautifier dodaje wciêcia i znaki koñca linii do plików XML,
+zastêpuje wszelkie encje, przeformatowuje komentarze i sprawia, ¿e
+dokument jest ³atwiejszy do czytania. Za pomoc± wielu opcji mo¿na
+wp³yn±æ na sposób, w jaki dokument bêdzie upiêkszony.
 
 Ta klasa ma w PEAR status: %{_status}.
 
