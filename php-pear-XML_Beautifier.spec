@@ -4,8 +4,8 @@
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - class to format XML documents.
-Summary(pl):	%{_pearname} - klasa do formatowania dokumentów XML.
+Summary:	%{_pearname} - class to format XML documents
+Summary(pl):	%{_pearname} - klasa do formatowania dokumentów XML
 Name:		php-pear-%{_pearname}
 Version:	0.2
 Release:	1
