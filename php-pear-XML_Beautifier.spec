@@ -25,7 +25,7 @@ replace all entities, format your comments and makes your document
 easier to read. You can influence the way your document is beautified
 with several options. 
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 XML_Beautifier dodaje wciêcia i znaki koñca linii do plików XML,
