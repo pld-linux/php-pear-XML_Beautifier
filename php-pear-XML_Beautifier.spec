@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          XML
-%define         _subclass       Beautifier
+%define		_class		XML
+%define		_subclass	Beautifier
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
@@ -45,7 +45,6 @@ install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Renderer
 install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 install %{_pearname}-%{version}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 install %{_pearname}-%{version}/%{_subclass}/Renderer/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Renderer
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
