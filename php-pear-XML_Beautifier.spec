@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - class to format XML documents
-Summary(pl):	%{_pearname} - klasa do formatowania dokumentów XML
+Summary(pl.UTF-8):   %{_pearname} - klasa do formatowania dokumentÃ³w XML
 Name:		php-pear-%{_pearname}
 Version:	1.1
 Release:	3
@@ -32,11 +32,11 @@ with several options.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-XML_Beautifier dodaje wciêcia i znaki koñca linii do plików XML,
-zastêpuje wszelkie encje, przeformatowuje komentarze i sprawia, ¿e
-dokument jest ³atwiejszy do czytania. Za pomoc± wielu opcji mo¿na
-wp³yn±æ na sposób, w jaki dokument bêdzie upiêkszony.
+%description -l pl.UTF-8
+XML_Beautifier dodaje wciÄ™cia i znaki koÅ„ca linii do plikÃ³w XML,
+zastÄ™puje wszelkie encje, przeformatowuje komentarze i sprawia, Å¼e
+dokument jest Å‚atwiejszy do czytania. Za pomocÄ… wielu opcji moÅ¼na
+wpÅ‚ynÄ…Ä‡ na sposÃ³b, w jaki dokument bÄ™dzie upiÄ™kszony.
 
 Ta klasa ma w PEAR status: %{_status}.
 
