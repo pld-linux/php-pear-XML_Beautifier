@@ -3,12 +3,11 @@
 %define		_subclass	Beautifier
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - class to format XML documents
 Summary(pl.UTF-8):	%{_pearname} - klasa do formatowania dokumentów XML
 Name:		php-pear-%{_pearname}
 Version:	1.2.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -17,10 +16,10 @@ URL:		http://pear.php.net/package/XML_Beautifier/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-pear
 Requires:	php-common >= 3:4.2.0
+Requires:	php-pear
+Requires:	php-pear-XML_Parser >= 1.0
 Requires:	php-pear-XML_Util >= 0.5
-Requires:	php-pear-XML_Parser
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,7 +27,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 XML_Beautifier will add indentation and linebreaks to you XML files,
 replace all entities, format your comments and makes your document
 easier to read. You can influence the way your document is beautified
-with several options. 
+with several options.
 
 In PEAR status of this package is: %{_status}.
 
