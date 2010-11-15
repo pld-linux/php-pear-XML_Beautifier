@@ -1,19 +1,17 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		XML
-%define		_subclass	Beautifier
 %define		_status		stable
-%define		_pearname	%{_class}_%{_subclass}
+%define		_pearname	XML_Beautifier
 Summary:	%{_pearname} - class to format XML documents
 Summary(pl.UTF-8):	%{_pearname} - klasa do formatowania dokumentów XML
 Name:		php-pear-%{_pearname}
-Version:	1.2.0
-Release:	2
+Version:	1.2.2
+Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	32e5fbe5a4fb499c3a472c0d1a3aad61
+# Source0-md5:	a5f57c749a09a1b598f0284c95f86e68
 URL:		http://pear.php.net/package/XML_Beautifier/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.3.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-common >= 3:4.2.0
@@ -47,6 +45,9 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
 %pear_package_install
 
+# tests should not be packaged
+%{__rm} -r $RPM_BUILD_ROOT%{php_pear_dir}/tests/%{_pearname}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -54,8 +55,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
-%dir %{php_pear_dir}/%{_class}/%{_subclass}
-%dir %{php_pear_dir}/%{_class}/%{_subclass}/Renderer
-%{php_pear_dir}/%{_class}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}/Renderer/*.php
+%{php_pear_dir}/XML/Beautifier.php
+%{php_pear_dir}/XML/Beautifier
