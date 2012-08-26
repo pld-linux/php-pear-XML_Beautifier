@@ -5,7 +5,7 @@ Summary:	%{_pearname} - class to format XML documents
 Summary(pl.UTF-8):	%{_pearname} - klasa do formatowania dokumentów XML
 Name:		php-pear-%{_pearname}
 Version:	1.2.2
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -14,7 +14,7 @@ URL:		http://pear.php.net/package/XML_Beautifier/
 BuildRequires:	php-pear-PEAR >= 1:1.3.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:4.2.0
+Requires:	php(core) >= 4.2.0
 Requires:	php-pear
 Requires:	php-pear-XML_Parser >= 1.0
 Requires:	php-pear-XML_Util >= 0.5
