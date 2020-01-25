@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		stable
 %define		_pearname	XML_Beautifier
 Summary:	%{_pearname} - class to format XML documents
