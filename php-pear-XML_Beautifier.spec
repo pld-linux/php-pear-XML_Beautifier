@@ -4,7 +4,7 @@ Summary:	%{_pearname} - class to format XML documents
 Summary(pl.UTF-8):	%{_pearname} - klasa do formatowania dokumentów XML
 Name:		php-pear-%{_pearname}
 Version:	1.2.2
-Release:	2
+Release:	3
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
